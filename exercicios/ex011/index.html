@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto flexivel">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio controls> <!--É importante colocar o parámetro controls-->
+        <source src="midia/palavras para sempre.mp3" type="audio/mpeg">
+        <source src="midia/palavras para sempre.ogg" type="audio/ogg">
+        <source src="midia/palavras para sempre.wav" type="audio/wav">
+    </audio>
+    <p>Infelizamente seu navegador não consegue reproduzir audio. <a href="midia/palavras para sempre.mp3">Clique aqui para baixar o seu arquivo MP3
+    </a></p>
+    <P>Agora com esse eu consigo carregar o audio</P>
+    <audio src="midia/palavras para sempre.mp3" controls autoplay></audio>
+</body>
+</html>
