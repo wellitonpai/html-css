@@ -4,10 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
 :root{
     --fonte01: Verdana, Geneva, Tahoma, sans-serif;
     --fonte02: 'Passion One', sans-serif;
     --fonte03: "Sriracha", cursive;
+    --fonte04: 'Bungee Tint', sans-serif;
 }
 
 *{
@@ -19,7 +22,7 @@
 html, body{
     min-height: 100vh;
     background-color: darkgrey;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--fonte04);
 }
 
 header{
