@@ -11,19 +11,36 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         th,td{
             border: 1px solid black;
             padding: 10px;
         }
 
+        tbody > tr:nth-child(odd){  /*even está dizendo que é só pares*/
+            background-color: lightgray;
+        }
+
         thead, tfoot{
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr >th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
         .num{
             text-align: right;
         }
+       caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+       }
     </style>
 </head>
 <body>
@@ -31,6 +48,7 @@
     <!--
         ANATOMIA DE TABELAS GRANDES
         TABLE
+            CAPTION - Legenda da tabela.
             TREAD - CABEÇA
                 TR, TD, TH
             TBODY
@@ -39,18 +57,14 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             
             </tr>
         </thead>
-        <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>212.583.750</strong></td>
-            </tr>
         </tfoot>
         <tbody>
             <tr>
@@ -163,7 +177,12 @@
             </tr>
             
         </tbody>
-        
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>212.583.750</strong></td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
