@@ -36,3 +36,8 @@ article{
     display: block;
     margin: auto;
 }
+
+main{
+    min-width: 300px;
+    max-width: 600px;
+}
