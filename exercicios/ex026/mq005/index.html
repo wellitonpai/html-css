@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul type="disc">
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -48,5 +50,15 @@ O desafio que o Brasil enfrenta atualmente é encontrar uma solução para incen
 Monitorar a ocorrência de crimes ambientais e policiar áreas em um país com vastas extensões de florestas, incluindo a Floresta Amazônica e a Mata Atlântica tem se mostrado uma tarefa difícil. O IBAMA e as Forças Armadas Brasileiras são as principais organizações utilizadas pelo governo federal para proteger ativamente os ecossistemas naturais do Brasil. A principal táctica utilizada para impedir a degradação ambiental e melhorar a sustentabilidade é o uso da força direta, como multas e penas de prisão. Isso reflete o sistema de comando e controle no qual a regulação e a proteção ambiental do Brasil são realizadas.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                (itens.style.display = 'none')
+            } else{
+                itens.style.display = 'block'
+            }
+    
+        }
+    </script>
 </body>
 </html>
