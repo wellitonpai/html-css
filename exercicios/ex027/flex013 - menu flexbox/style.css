@@ -26,13 +26,21 @@ header{
 }
 
 header > h1{
+<<<<<<< HEAD
    /* border: 1px dotted black; */
     flex: 0 0 200px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
+=======
+    border: 1px dotted black;
+    flex: 0 0 200px
+>>>>>>> 150cec1184032cedc6e9da9fb2b5064164bc516c
 }
-
 header > nav{
+<<<<<<< HEAD
     /* border: 1px dotted black; */
+=======
+    border: 1px dotted black;
+>>>>>>> 150cec1184032cedc6e9da9fb2b5064164bc516c
 
     display: flex;
     flex-flow: row wrap;
@@ -47,15 +55,14 @@ header > nav > a{
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+    
 }
 
 header > nav > a:hover{
     background-color: white;
     color: black;
     transition: background-color .5s;
-
 }
-
 
 main{
     background-color: white;

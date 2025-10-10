@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+<<<<<<< HEAD
 header, header > nav{
     flex-flow: column nowrap;
 }
@@ -11,3 +12,17 @@ header > h1{
 header > nav > a{
     width: 95vw;
 }
+=======
+header nav {
+    flex-flow: column nowrap;
+}
+
+header {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex: 0 0 47px;
+}
+
+>>>>>>> 150cec1184032cedc6e9da9fb2b5064164bc516c
